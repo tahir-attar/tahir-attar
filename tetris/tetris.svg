@@ -1,161 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="140" height="720" viewBox="0 0 140 720" aria-labelledby="title desc" role="img">
-  <title id="title">GitHub Tetris — Contribution Grid Snapshot</title>
-  <desc id="desc">A single-frame simulation of multiple Tetris pieces falling on a GitHub-style contribution grid. Cleared line shown as an empty row; blocks above appear shifted down. Dark GitHub theme with rounded contribution cells.</desc>
+name: GitHub Tetris
 
-  <!-- Dark GitHub background -->
-  <rect x="0" y="0" width="140" height="720" fill="#0D1117"/>
+on:
+  schedule:
+    - cron: "*/12 * * * *"    # every ~12 minutes
+  workflow_dispatch:
 
-  <!-- Styles for cells and blocks -->
-  <style>
-    .cell { fill:#161B22; stroke:#30363D; stroke-width:1; rx:3; }
-    .block { stroke:#30363D; stroke-width:1; rx:3; }
-  </style>
+permissions:
+  contents: write              # allow committing with GITHUB_TOKEN
 
-  <!-- Grid parameters (static layout) -->
-  <!-- origin: (20,20), cell: 11, gap: 2 => step: 13; 7 columns, 52 rows -->
-  <!-- x(c) = 20 + 13*c; y(r) = 20 + 13*r -->
+concurrency:
+  group: tetris-schedule
+  cancel-in-progress: true     # avoid overlapping runs
 
-  <!-- Empty grid (visible even when empty, rounded corners) -->
-  <!-- Row 0 -->
-  <rect class="cell" x="20" y="20" width="11" height="11"/>
-  <rect class="cell" x="33" y="20" width="11" height="11"/>
-  <rect class="cell" x="46" y="20" width="11" height="11"/>
-  <rect class="cell" x="59" y="20" width="11" height="11"/>
-  <rect class="cell" x="72" y="20" width="11" height="11"/>
-  <rect class="cell" x="85" y="20" width="11" height="11"/>
-  <rect class="cell" x="98" y="20" width="11" height="11"/>
-  <!-- Row 1 -->
-  <rect class="cell" x="20" y="33" width="11" height="11"/>
-  <rect class="cell" x="33" y="33" width="11" height="11"/>
-  <rect class="cell" x="46" y="33" width="11" height="11"/>
-  <rect class="cell" x="59" y="33" width="11" height="11"/>
-  <rect class="cell" x="72" y="33" width="11" height="11"/>
-  <rect class="cell" x="85" y="33" width="11" height="11"/>
-  <rect class="cell" x="98" y="33" width="11" height="11"/>
-  <!-- Row 2 -->
-  <rect class="cell" x="20" y="46" width="11" height="11"/>
-  <rect class="cell" x="33" y="46" width="11" height="11"/>
-  <rect class="cell" x="46" y="46" width="11" height="11"/>
-  <rect class="cell" x="59" y="46" width="11" height="11"/>
-  <rect class="cell" x="72" y="46" width="11" height="11"/>
-  <rect class="cell" x="85" y="46" width="11" height="11"/>
-  <rect class="cell" x="98" y="46" width="11" height="11"/>
-  <!-- Row 3 -->
-  <rect class="cell" x="20" y="59" width="11" height="11"/>
-  <rect class="cell" x="33" y="59" width="11" height="11"/>
-  <rect class="cell" x="46" y="59" width="11" height="11"/>
-  <rect class="cell" x="59" y="59" width="11" height="11"/>
-  <rect class="cell" x="72" y="59" width="11" height="11"/>
-  <rect class="cell" x="85" y="59" width="11" height="11"/>
-  <rect class="cell" x="98" y="59" width="11" height="11"/>
-  <!-- Row 4 -->
-  <rect class="cell" x="20" y="72" width="11" height="11"/>
-  <rect class="cell" x="33" y="72" width="11" height="11"/>
-  <rect class="cell" x="46" y="72" width="11" height="11"/>
-  <rect class="cell" x="59" y="72" width="11" height="11"/>
-  <rect class="cell" x="72" y="72" width="11" height="11"/>
-  <rect class="cell" x="85" y="72" width="11" height="11"/>
-  <rect class="cell" x="98" y="72" width="11" height="11"/>
-  <!-- Row 5 -->
-  <rect class="cell" x="20" y="85" width="11" height="11"/>
-  <rect class="cell" x="33" y="85" width="11" height="11"/>
-  <rect class="cell" x="46" y="85" width="11" height="11"/>
-  <rect class="cell" x="59" y="85" width="11" height="11"/>
-  <rect class="cell" x="72" y="85" width="11" height="11"/>
-  <rect class="cell" x="85" y="85" width="11" height="11"/>
-  <rect class="cell" x="98" y="85" width="11" height="11"/>
-  <!-- Row 6 -->
-  <rect class="cell" x="20" y="98" width="11" height="11"/>
-  <rect class="cell" x="33" y="98" width="11" height="11"/>
-  <rect class="cell" x="46" y="98" width="11" height="11"/>
-  <rect class="cell" x="59" y="98" width="11" height="11"/>
-  <rect class="cell" x="72" y="98" width="11" height="11"/>
-  <rect class="cell" x="85" y="98" width="11" height="11"/>
-  <rect class="cell" x="98" y="98" width="11" height="11"/>
-  <!-- Rows 7..51 -->
-  <!-- (For brevity in this single-frame SVG, the remaining grid rows continue identically,
-       ensuring a full 7×52 GitHub-style grid with rounded cells and visible strokes.) -->
-  <!-- The next block draws all remaining rows programmatically-like but statically listed -->
-  <!-- Row 7 -->
-  <rect class="cell" x="20" y="111" width="11" height="11"/><rect class="cell" x="33" y="111" width="11" height="11"/><rect class="cell" x="46" y="111" width="11" height="11"/><rect class="cell" x="59" y="111" width="11" height="11"/><rect class="cell" x="72" y="111" width="11" height="11"/><rect class="cell" x="85" y="111" width="11" height="11"/><rect class="cell" x="98" y="111" width="11" height="11"/>
-  <!-- Row 8 -->
-  <rect class="cell" x="20" y="124" width="11" height="11"/><rect class="cell" x="33" y="124" width="11" height="11"/><rect class="cell" x="46" y="124" width="11" height="11"/><rect class="cell" x="59" y="124" width="11" height="11"/><rect class="cell" x="72" y="124" width="11" height="11"/><rect class="cell" x="85" y="124" width="11" height="11"/><rect class="cell" x="98" y="124" width="11" height="11"/>
-  <!-- Row 9 -->
-  <rect class="cell" x="20" y="137" width="11" height="11"/><rect class="cell" x="33" y="137" width="11" height="11"/><rect class="cell" x="46" y="137" width="11" height="11"/><rect class="cell" x="59" y="137" width="11" height="11"/><rect class="cell" x="72" y="137" width="11" height="11"/><rect class="cell" x="85" y="137" width="11" height="11"/><rect class="cell" x="98" y="137" width="11" height="11"/>
-  <!-- Row 10 -->
-  <rect class="cell" x="20" y="150" width="11" height="11"/><rect class="cell" x="33" y="150" width="11" height="11"/><rect class="cell" x="46" y="150" width="11" height="11"/><rect class="cell" x="59" y="150" width="11" height="11"/><rect class="cell" x="72" y="150" width="11" height="11"/><rect class="cell" x="85" y="150" width="11" height="11"/><rect class="cell" x="98" y="150" width="11" height="11"/>
-  <!-- Row 11 -->
-  <rect class="cell" x="20" y="163" width="11" height="11"/><rect class="cell" x="33" y="163" width="11" height="11"/><rect class="cell" x="46" y="163" width="11" height="11"/><rect class="cell" x="59" y="163" width="11" height="11"/><rect class="cell" x="72" y="163" width="11" height="11"/><rect class="cell" x="85" y="163" width="11" height="11"/><rect class="cell" x="98" y="163" width="11" height="11"/>
-  <!-- Row 12 -->
-  <rect class="cell" x="20" y="176" width="11" height="11"/><rect class="cell" x="33" y="176" width="11" height="11"/><rect class="cell" x="46" y="176" width="11" height="11"/><rect class="cell" x="59" y="176" width="11" height="11"/><rect class="cell" x="72" y="176" width="11" height="11"/><rect class="cell" x="85" y="176" width="11" height="11"/><rect class="cell" x="98" y="176" width="11" height="11"/>
-  <!-- Row 13 -->
-  <rect class="cell" x="20" y="189" width="11" height="11"/><rect class="cell" x="33" y="189" width="11" height="11"/><rect class="cell" x="46" y="189" width="11" height="11"/><rect class="cell" x="59" y="189" width="11" height="11"/><rect class="cell" x="72" y="189" width="11" height="11"/><rect class="cell" x="85" y="189" width="11" height="11"/><rect class="cell" x="98" y="189" width="11" height="11"/>
-  <!-- Rows 14..51 (identical pattern) -->
-  <!-- To keep the SVG readable here, remaining rows are abbreviated; in a full asset,
-       continue listing rects for rows 14 through 51 at y = 202, 215, ..., 683. -->
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-  <!-- Tetris blocks (aligned to grid). Multiple colors, multiple pieces "falling". -->
-  <!-- Green T (rows 5-6, centered) -->
-  <rect class="block" x="46" y="98" width="11" height="11" fill="#2EA043"/>
-  <rect class="block" x="59" y="98" width="11" height="11" fill="#2EA043"/>
-  <rect class="block" x="72" y="98" width="11" height="11" fill="#2EA043"/>
-  <rect class="block" x="59" y="85" width="11" height="11" fill="#2EA043"/>
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
 
-  <!-- Blue L (left side, falling) -->
-  <rect class="block" x="20" y="150" width="11" height="11" fill="#1F6FEB"/>
-  <rect class="block" x="20" y="137" width="11" height="11" fill="#1F6FEB"/>
-  <rect class="block" x="20" y="124" width="11" height="11" fill="#1F6FEB"/>
-  <rect class="block" x="33" y="150" width="11" height="11" fill="#1F6FEB"/>
+      - name: Run Tetris engine
+        run: |
+          python tetris/engine.py
 
-  <!-- Purple S (right side, falling) -->
-  <rect class="block" x="85" y="189" width="11" height="11" fill="#A371F7"/>
-  <rect class="block" x="98" y="189" width="11" height="11" fill="#A371F7"/>
-  <rect class="block" x="72" y="176" width="11" height="11" fill="#A371F7"/>
-  <rect class="block" x="85" y="176" width="11" height="11" fill="#A371F7"/>
-
-  <!-- Red O (mid stack) -->
-  <rect class="block" x="46" y="229" width="11" height="11" fill="#F85149"/>
-  <rect class="block" x="59" y="229" width="11" height="11" fill="#F85149"/>
-  <rect class="block" x="46" y="242" width="11" height="11" fill="#F85149"/>
-  <rect class="block" x="59" y="242" width="11" height="11" fill="#F85149"/>
-
-  <!-- Orange Z (mid-right) -->
-  <rect class="block" x="33" y="276" width="11" height="11" fill="#D29922"/>
-  <rect class="block" x="46" y="276" width="11" height="11" fill="#D29922"/>
-  <rect class="block" x="46" y="263" width="11" height="11" fill="#D29922"/>
-  <rect class="block" x="59" y="263" width="11" height="11" fill="#D29922"/>
-
-  <!-- Ground stack near bottom (mixed colors), with a cleared line above -->
-  <!-- Cleared full line: leave Row 48 empty (y = 20 + 13*48 = 644) -->
-  <!-- Bottom rows filled (49..51) to illustrate gravity after clear -->
-
-  <!-- Row 49 (y=657) -->
-  <rect class="block" x="20" y="657" width="11" height="11" fill="#1F6FEB"/>
-  <rect class="block" x="33" y="657" width="11" height="11" fill="#2EA043"/>
-  <rect class="block" x="46" y="657" width="11" height="11" fill="#D29922"/>
-  <rect class="block" x="59" y="657" width="11" height="11" fill="#A371F7"/>
-  <rect class="block" x="72" y="657" width="11" height="11" fill="#F85149"/>
-  <rect class="block" x="85" y="657" width="11" height="11" fill="#2EA043"/>
-  <rect class="block" x="98" y="657" width="11" height="11" fill="#1F6FEB"/>
-
-  <!-- Row 50 (y=670) -->
-  <rect class="block" x="20" y="670" width="11" height="11" fill="#D29922"/>
-  <rect class="block" x="33" y="670" width="11" height="11" fill="#A371F7"/>
-  <rect class="block" x="46" y="670" width="11" height="11" fill="#2EA043"/>
-  <rect class="block" x="59" y="670" width="11" height="11" fill="#1F6FEB"/>
-  <rect class="block" x="72" y="670" width="11" height="11" fill="#F85149"/>
-  <rect class="block" x="85" y="670" width="11" height="11" fill="#D29922"/>
-  <rect class="block" x="98" y="670" width="11" height="11" fill="#A371F7"/>
-
-  <!-- Row 51 (y=683) -->
-  <rect class="block" x="20" y="683" width="11" height="11" fill="#F85149"/>
-  <rect class="block" x="33" y="683" width="11" height="11" fill="#1F6FEB"/>
-  <rect class="block" x="46" y="683" width="11" height="11" fill="#A371F7"/>
-  <rect class="block" x="59" y="683" width="11" height="11" fill="#2EA043"/>
-  <rect class="block" x="72" y="683" width="11" height="11" fill="#D29922"/>
-  <rect class="block" x="85" y="683" width="11" height="11" fill="#F85149"/>
-  <rect class="block" x="98" y="683" width="11" height="11" fill="#2EA043"/>
-
-  <!-- Label (optional, subtle) -->
-  <text x="20" y="12" fill="#8B949E" font-size="7" font-family="Segoe UI, system-ui, -apple-system, Arial">GitHub Tetris — Snapshot</text>
-</svg>
+      - name: Commit and push updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tetris/tetris.svg tetris/state.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update Tetris frame [skip ci]"
+            git push
+          fi
