@@ -41,7 +41,7 @@
 
 ## 🧩 GitHub Tetris
 
-![GitHub Tetris](./tetris.svg)
+![GitHub Tetris](./tetris/tetris.svg)
 
 🟢 Auto-playing Tetris game rendered on a GitHub-style contribution grid.
 
