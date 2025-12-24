@@ -1,0 +1,29 @@
+<svg width="700" height="120" viewBox="0 0 700 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .cell { fill: #161B22; }
+    .block { fill: #39D353; }
+  </style>
+
+  <!-- Background Grid -->
+  <g>
+    <!-- 7 columns x 10 rows -->
+    <!-- cell size = 15 -->
+    <!-- spacing = 2 -->
+    <!-- generate grid -->
+    <!-- example -->
+    <rect x="0" y="0" width="15" height="15" class="cell"/>
+    <rect x="17" y="0" width="15" height="15" class="cell"/>
+    <!-- repeat -->
+  </g>
+
+  <!-- Falling Tetris Block -->
+  <g>
+    <rect x="51" y="0" width="15" height="15" class="block">
+      <animate attributeName="y"
+               from="0"
+               to="100"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
