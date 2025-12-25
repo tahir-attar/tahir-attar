@@ -1,29 +1,83 @@
-# GitHub Tetris on Contribution Grid
+<!-- Animated Name -->
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=30&duration=3000&pause=800&color=5EEBFF&center=true&vCenter=true&width=600&lines=TAHIR+ATTAR;COMPUTER+SCIENCE+ENGINEER;AI+%7C+MACHINE+LEARNING+%7C+PYTHON" alt="Typing SVG" />
+</h1>
 
-This repository renders a Tetris simulation onto a GitHub contribution-style grid and updates automatically via GitHub Actions.
+<p align="center">
+  <b>Engineering intelligent systems where code meets intelligence.</b>
+</p>
+
+---
+
+## 🧠 Developer Dashboard
+
+<table>
+<tr>
+<td>
+
+### 👨‍💻 About Me
+- 🎓 Final-year **Computer Science Engineering** student  
+- 🤖 Focused on **AI, Machine Learning, and Python**
+- 🔐 Interested in **Cybersecurity & System-Level Engineering**
+- 🧩 Strong in **Data Structures & Algorithms**
+
+</td>
+<td>
+
+### ⚙️ Tech Stack
+- **Language:** Python  
+- **AI/ML:** Machine Learning, Feature Engineering  
+- **Security:** Malware Detection, Static & Dynamic Analysis  
+- **Core CS:** DSA, OS, DBMS  
+- **Tools:** Git, GitHub, Linux  
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🎮 Game & Code Zone
+
+### 🧩 GitHub Tetris
+
+![GitHub Tetris](tetris/tetris.svg)
+
+🟢 **Auto-playing Tetris game rendered on a GitHub-style contribution grid.**
 
 - Grid: 52 columns × 7 rows (days × weeks)
 - Frame-based updates: falling pieces move down one row per run
 - Line clearing: full rows disappear, upper rows shift down, new row inserted at the top
+- Python script `tetris/engine.py` updates the persistent game state and generates the SVG
+- GitHub Actions runs on a schedule (every ~12 minutes) and auto-commits updates
 
-## Live SVG
+---
 
-![GitHub Tetris](tetris/tetris.svg)
+## 🚀 Featured Project
 
-### Troubleshooting
-- If you see "Invalid image source", ensure `tetris/tetris.svg` is committed and the path/case matches exactly.
-- View the raw image at `https://raw.githubusercontent.com/<owner>/<repo>/<branch>/tetris/tetris.svg` to confirm it exists.
-- On GitHub, paths are case-sensitive; verify the folder name is `tetris`.
+### 🔐 DigiKavach – Multistage Malware Detection System
+- 🛡️ Windows-based **AI-powered malware detection system**
+- 🔍 ML-based **static analysis**, **sandbox execution**, and **behavioral monitoring**
+- 🧩 Modular architecture with real-time alerts and reporting
 
-## How it works
+👉 Explore more projects in my repositories.
 
-- Python script `tetris/engine.py` updates the persistent game `tetris/state.json`, applies gravity, fixes pieces, clears lines, and generates `tetris/tetris.svg`.
-- GitHub Actions runs on a schedule (every ~12 minutes) and pushes changes.
+---
 
-## Local Run
+## 📊 GitHub Stats Dashboard
 
-```bash
-python tetris/engine.py
-```
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=tokyonight&hide_border=true" height="160"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=tokyonight&hide_border=true" height="160"/>
+</p>
 
-No JavaScript is used; the SVG is safe to embed in README.
+---
+
+## 🧠 Coding Philosophy
+
+```text
+while(problem_exists):
+    analyze()
+    design()
+    code()
+    optimize()
