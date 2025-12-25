@@ -1,9 +1,9 @@
 {
-  "ball_x": 24.0,
-  "ball_y": 8.0,
-  "ball_vx": 1.0,
+  "ball_x": 25.0,
+  "ball_y": 15.5,
+  "ball_vx": -1.0,
   "ball_vy": 1.5,
-  "paddle_x": 19,
+  "paddle_x": 22,
   "score": 10,
   "bricks": [
     [
@@ -219,6 +219,6 @@
       14
     ]
   ],
-  "tick": 10,
+  "tick": 15,
   "game_over": false
 }
