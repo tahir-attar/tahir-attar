@@ -235,11 +235,12 @@ def tick(state: Dict) -> None:
 
     fixed_indexes = set()
 
-    # Build occupied set from current grid
+    # Build occupied set from current grid (fixed blocks only)
     occupied = {(x, y) for y in range(ROWS) for x in range(COLS) if grid[y][x] is not None}
 
+    # Try to move each piece down by 1
     for idx, p in enumerate(pieces):
-        # Consider other pieces as blockers
+        # Build blocker set: all other pieces' blocks, but NOT this piece
         other_blocks = set()
         for jdx, op in enumerate(pieces):
             if jdx == idx:
@@ -249,25 +250,32 @@ def tick(state: Dict) -> None:
 
         # Try to move down by 1
         new_blocks = [(x, y + 1) for (x, y) in p.blocks()]
+        
+        # Check collision: out of bounds, fixed grid, or other falling pieces
         blocked = False
         for b in new_blocks:
-            if not in_bounds(b[0], b[1]) or b in occupied or b in other_blocks:
+            if not in_bounds(b[0], b[1]):
                 blocked = True
                 break
+            if b in occupied or b in other_blocks:
+                blocked = True
+                break
+        
         if blocked:
             # Fix this piece into the grid
             place_piece(grid, p)
             fixed_indexes.add(idx)
         else:
+            # Piece can fall, move it down
             p.y += 1
 
-    # Remove fixed pieces
+    # Remove fixed pieces from active list
     pieces = [p for idx, p in enumerate(pieces) if idx not in fixed_indexes]
 
     # Clear any full rows
     cleared = clear_full_rows(grid)
 
-    # Update state
+    # Update state with remaining active pieces
     state["active_pieces"] = [{"kind": p.kind, "rotation": p.rotation, "x": p.x, "y": p.y} for p in pieces]
     state["tick"] = int(state.get("tick", 0)) + 1
 
