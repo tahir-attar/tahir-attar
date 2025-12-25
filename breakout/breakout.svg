@@ -8,7 +8,6 @@
   <rect x="330" y="45" width="14" height="14" fill="#39d353" rx="1"/>
   <rect x="90" y="120" width="14" height="14" fill="#39d353" rx="1"/>
   <rect x="375" y="75" width="14" height="14" fill="#39d353" rx="1"/>
-  <rect x="330" y="75" width="14" height="14" fill="#39d353" rx="1"/>
   <rect x="225" y="120" width="14" height="14" fill="#39d353" rx="1"/>
   <rect x="120" y="30" width="14" height="14" fill="#39d353" rx="1"/>
   <rect x="210" y="30" width="14" height="14" fill="#39d353" rx="1"/>
@@ -53,10 +52,10 @@
   <rect x="165" y="105" width="14" height="14" fill="#39d353" rx="1"/>
   <rect x="360" y="30" width="14" height="14" fill="#39d353" rx="1"/>
   <rect x="210" y="105" width="14" height="14" fill="#39d353" rx="1"/>
-  <rect x="210" y="285" width="60" height="15" fill="#ffffff" rx="1"/>
-  <circle cx="292" cy="142" r="4" fill="#ffeb3b"/>
+  <rect x="285" y="285" width="60" height="15" fill="#ffffff" rx="1"/>
+  <circle cx="367" cy="127" r="4" fill="#ffeb3b"/>
   <rect x="325" y="5" width="95" height="60" fill="#161b22" rx="2"/>
   <text x="330" y="25" font-size="12" fill="#8b949e" font-family="monospace">SCORE</text>
-  <text x="330" y="45" font-size="16" fill="#39d353" font-family="monospace" font-weight="bold">0</text>
-  <text x="330" y="65" font-size="10" fill="#8b949e" font-family="monospace">Bricks: 54</text>
+  <text x="330" y="45" font-size="16" fill="#39d353" font-family="monospace" font-weight="bold">10</text>
+  <text x="330" y="65" font-size="10" fill="#8b949e" font-family="monospace">Bricks: 53</text>
 </svg>

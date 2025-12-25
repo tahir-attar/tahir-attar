@@ -1,10 +1,10 @@
 {
-  "ball_x": 19.0,
-  "ball_y": 9.5,
+  "ball_x": 24.0,
+  "ball_y": 8.0,
   "ball_vx": 1.0,
-  "ball_vy": -1.5,
-  "paddle_x": 14,
-  "score": 0,
+  "ball_vy": 1.5,
+  "paddle_x": 19,
+  "score": 10,
   "bricks": [
     [
       4,
@@ -41,10 +41,6 @@
     [
       5,
       25
-    ],
-    [
-      5,
-      22
     ],
     [
       8,
@@ -223,6 +219,6 @@
       14
     ]
   ],
-  "tick": 5,
+  "tick": 10,
   "game_over": false
 }
