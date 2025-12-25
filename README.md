@@ -41,7 +41,20 @@
 
 ### 🧩 GitHub Tetris
 
-<img src="https://raw.githubusercontent.com/tahir-attar/tahir-attar/main/tetris/tetris_animated.svg?v=1" alt="GitHub Tetris" width="824">
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#0d1117"/>
+  <rect x="20" y="20" width="20" height="20" fill="#58a6ff" rx="2">
+    <animate attributeName="y" from="20" to="200" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="80" y="20" width="20" height="20" fill="#39d353" rx="2">
+    <animate attributeName="y" from="20" to="200" dur="4s" begin="1s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="140" y="20" width="20" height="20" fill="#a371f7" rx="2">
+    <animate attributeName="y" from="20" to="200" dur="4s" begin="2s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="20" y="220" width="260" height="20" fill="#30363d"/>
+  <text x="150" y="280" text-anchor="middle" font-size="16" fill="#8b949e">TETRIS</text>
+</svg>
 
 🟢 **Live animated Tetris game** — blocks fall, rows clear with a flash, loops seamlessly!
 
