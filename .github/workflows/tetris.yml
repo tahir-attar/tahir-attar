@@ -2,7 +2,7 @@ name: GitHub Tetris
 
 on:
   schedule:
-    - cron: "*/2 * * * *" # every 2 minutes
+    - cron: "*/1 * * * *" # every 1 minute (max GitHub Actions frequency)
   workflow_dispatch:
 
 permissions:

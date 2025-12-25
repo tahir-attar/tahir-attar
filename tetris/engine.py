@@ -326,7 +326,7 @@ def render_svg(state: Dict, svg_path: str) -> None:
     width = cols * CELL_SIZE + (cols - 1) * GAP
     height = rows * CELL_SIZE + (rows - 1) * GAP
 
-    # Right panel dimensions (for score and next piece)
+    # Right panel dimensions
     right_panel_width = 140
     right_panel_gap = 10
 
@@ -362,23 +362,15 @@ def render_svg(state: Dict, svg_path: str) -> None:
                     f'fill="{color}" stroke="{GRID_STROKE}" stroke-width="0.5"/>'
                 )
 
-    # Overlay falling blocks with smooth animation
-    anim_duration = 1.8  # seconds per 1-row drop (matches ~2-minute update cycle)
-    for idx, p in enumerate(active):
+    # Draw falling blocks (no animation, just static position)
+    for p in active:
         color = PIECE_COLORS.get(p.kind, "#58A6FF")
-        for block_idx, (c, r) in enumerate(p.blocks()):
+        for (c, r) in p.blocks():
             if in_bounds(c, r):
                 x, y = cell_xy(c, r)
-                # Add slight delay per block for visual effect
-                delay = block_idx * 0.05
                 parts.append(
-                    f'<g>'
-                    f'<animateTransform attributeName="transform" type="translate" '
-                    f'values="0,0; 0,{CELL_SIZE + GAP}" dur="{anim_duration}s" '
-                    f'begin="{delay}s" repeatCount="1" fill="freeze"/>'
                     f'<rect x="{x}" y="{y}" width="{CELL_SIZE}" height="{CELL_SIZE}" rx="{ROUND_RX}" '
                     f'fill="{color}" stroke="{GRID_STROKE}" stroke-width="0.5"/>'
-                    f'</g>'
                 )
 
     # Right panel: Score display
