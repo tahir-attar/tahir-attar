@@ -156,7 +156,7 @@ def generate_tetris_svg(output_path: str) -> None:
         )
     
     # Add watermark text
-    parts.append(f'<text x="{width/2}" y="{height - 5}" font-size="10" fill="#30363D" font-family="monospace" text-anchor="middle">TETRIS • Auto-loops</text>')
+    parts.append(f'<text x="{width/2}" y="{height - 5}" font-size="10" fill="#30363D" font-family="monospace" text-anchor="middle">TETRIS - Auto-loops</text>')
     
     parts.append('</svg>')
     
