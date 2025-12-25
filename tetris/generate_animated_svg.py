@@ -40,6 +40,7 @@ def generate_tetris_svg(output_path: str) -> None:
         return (c * (CELL_SIZE + GAP), r * (CELL_SIZE + GAP))
     
     parts = []
+    parts.append('<?xml version="1.0" encoding="UTF-8"?>')
     parts.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{total_width}" height="{total_height}" viewBox="0 0 {total_width} {total_height}" style="background:{BG_COLOR}">')
     
     # Draw static empty grid
@@ -160,7 +161,7 @@ def generate_tetris_svg(output_path: str) -> None:
     
     parts.append('</svg>')
     
-    with open(output_path, 'w') as f:
+    with open(output_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(parts))
     
     print(f"✅ Generated animated SVG: {output_path}")
