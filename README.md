@@ -1,97 +1,52 @@
-<!-- Animated Name -->
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=30&duration=3000&pause=800&color=5EEBFF&center=true&vCenter=true&width=600&lines=TAHIR+ATTAR;COMPUTER+SCIENCE+ENGINEER;AI+%7C+MACHINE+LEARNING+%7C+PYTHON" alt="Typing SVG" />
-</h1>
+<h1 align="center">Hey 👋What's Up?</h1>
 
-<p align="center">
-  <b>Engineering intelligent systems where code meets intelligence.</b>
-</p>
+###
 
----
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=ts" height="60" alt="typescript logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=nextjs" height="60" alt="nextjs logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=tailwind" height="60" alt="tailwindcss logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg" height="60" alt="storybook logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=graphql" height="60" alt="graphql logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=go" height="60" alt="go logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=rust" height="60" alt="rust logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=nestjs" height="60" alt="nestjs logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=py" height="60" alt="python logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=aws" height="60" alt="amazonwebservices logo"  />
+</div>
 
-## 🧠 Developer Dashboard
+###
 
-<table>
-<tr>
-<td>
+<div align="center">
+  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
+  <img src="https://img.shields.io/static/v1?message=Twitter&logo=twitter&label=&color=1DA1F2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="twitter logo"  />
+  <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="discord logo"  />
+  <img src="https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="twitch logo"  />
+  <img src="https://img.shields.io/static/v1?message=dev.to&logo=dev.to&label=&color=0A0A0A&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="devto logo"  />
+</div>
 
-### 👨‍💻 About Me
-- 🎓 Final-year **Computer Science Engineering** student  
-- 🤖 Focused on **AI, Machine Learning, and Python**
-- 🔐 Interested in **Cybersecurity & System-Level Engineering**
-- 🧩 Strong in **Data Structures & Algorithms**
+###
 
-</td>
-<td>
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=maurodesouza&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
+  <img src="https://github-profile-trophy.vercel.app?username=maurodesouza&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4" height="150" alt="trophy graph"  />
+</div>
 
-### ⚙️ Tech Stack
-- **Language:** Python  
-- **AI/ML:** Machine Learning, Feature Engineering  
-- **Security:** Malware Detection, Static & Dynamic Analysis  
-- **Core CS:** DSA, OS, DBMS  
-- **Tools:** Git, GitHub, Linux  
+###
 
-</td>
-</tr>
-</table>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/maurodesouza/maurodesouza/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/maurodesouza/maurodesouza/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/output/pacman-contribution-graph.svg">
+</picture>
 
----
-
-## 🎮 Game & Code Zone
-
-### 🧩 GitHub Tetris
-
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
-  <rect width="300" height="300" fill="#0d1117"/>
-  <rect x="20" y="20" width="20" height="20" fill="#58a6ff" rx="2">
-    <animate attributeName="y" from="20" to="200" dur="4s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="80" y="20" width="20" height="20" fill="#39d353" rx="2">
-    <animate attributeName="y" from="20" to="200" dur="4s" begin="1s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="140" y="20" width="20" height="20" fill="#a371f7" rx="2">
-    <animate attributeName="y" from="20" to="200" dur="4s" begin="2s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="20" y="220" width="260" height="20" fill="#30363d"/>
-  <text x="150" y="280" text-anchor="middle" font-size="16" fill="#8b949e">TETRIS</text>
-</svg>
-
-🟢 **Live animated Tetris game** — blocks fall, rows clear with a flash, loops seamlessly!
-
-- Blocks fall smoothly with SMIL animations
-- Rows flash and clear when complete
-- Score counter and next piece preview
-- Seamless infinite loop
-- Python script `tetris/engine.py` updates the persistent game state and generates the SVG
-- GitHub Actions runs on a schedule (every ~12 minutes) and auto-commits updates
-
----
-
-## 🚀 Featured Project
-
-### 🔐 DigiKavach – Multistage Malware Detection System
-- 🛡️ Windows-based **AI-powered malware detection system**
-- 🔍 ML-based **static analysis**, **sandbox execution**, and **behavioral monitoring**
-- 🧩 Modular architecture with real-time alerts and reporting
-
-👉 Explore more projects in my repositories.
-
----
-
-## 📊 GitHub Stats Dashboard
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=tokyonight&hide_border=true" height="160"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=tokyonight&hide_border=true" height="160"/>
-</p>
-
----
-
-## 🧠 Coding Philosophy
-
-```text
-while(problem_exists):
-    analyze()
-    design()
-    code()
-    optimize()
+###
