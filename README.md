@@ -41,9 +41,11 @@
 
 ### 🧩 GitHub Tetris
 
-![GitHub Tetris](tetris/tetris.svg)
+![GitHub Tetris](tetris/tetris.svg?v=1)
 
 🟢 **Auto-playing Tetris game rendered on a GitHub-style contribution grid.**
+
+*Live updates every 2 minutes via GitHub Actions*
 
 - Grid: 52 columns × 7 rows (days × weeks)
 - Frame-based updates: falling pieces move down one row per run
