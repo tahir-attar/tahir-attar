@@ -41,14 +41,9 @@
 
 ### 🧩 GitHub Tetris
 
-![GitHub Tetris](tetris/tetris.svg?t=1)
+![GitHub Tetris](tetris/tetris_animated.svg)
 
-🟢 **Live Tetris game on your contribution grid** — updates every minute!
-
-- Real blocks fall and stack
-- Rows clear when filled
-- Score increases with line clears
-- Next piece preview on the right
+🟢 **Live animated Tetris game** — blocks fall, rows clear with a flash, loops seamlessly!
 
 - Grid: 52 columns × 7 rows (days × weeks)
 - Frame-based updates: falling pieces move down one row per run
