@@ -41,13 +41,14 @@
 
 ### 🧩 GitHub Tetris
 
-![GitHub Tetris](tetris/tetris_animated.svg)
+<img src="https://raw.githubusercontent.com/tahir-attar/tahir-attar/main/tetris/tetris_animated.svg?v=1" alt="GitHub Tetris" width="824">
 
 🟢 **Live animated Tetris game** — blocks fall, rows clear with a flash, loops seamlessly!
 
-- Grid: 52 columns × 7 rows (days × weeks)
-- Frame-based updates: falling pieces move down one row per run
-- Line clearing: full rows disappear, upper rows shift down, new row inserted at the top
+- Blocks fall smoothly with SMIL animations
+- Rows flash and clear when complete
+- Score counter and next piece preview
+- Seamless infinite loop
 - Python script `tetris/engine.py` updates the persistent game state and generates the SVG
 - GitHub Actions runs on a schedule (every ~12 minutes) and auto-commits updates
 
