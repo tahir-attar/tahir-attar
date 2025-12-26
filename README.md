@@ -54,7 +54,7 @@
 ---
 <details>
   <summary>:zap: Github Stats </summary>
-  <img align="left" alt="Tahir's Github Stats" src="https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide_border=true&show_icons=true&theme=radical)" />
+  <img align="left" alt="Tahir's Github Stats" src="https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide_border=true&theme=nightowl)" />
 </details>
 ## 🎮 Interactive Games
 
