@@ -52,6 +52,8 @@
 ###
 
 ---
+#
+![What Am I Listening](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/main/assets/listening-on-ytmusic.svg)
 
 ![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,total_prs&theme=transparent)
 ## 🎮 Interactive Games
