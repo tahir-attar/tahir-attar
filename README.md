@@ -53,4 +53,5 @@
 
 ---
 ![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,total_prs&theme=transparent)
+[![Tahir's GitHub stats](https://github-readme-stats.vercel.app/api?username=tahir-attar)](https://github.com/anuraghazra/github-readme-stats)
 
