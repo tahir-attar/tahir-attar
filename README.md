@@ -52,10 +52,7 @@
 ###
 
 ---
-<details>
-  <summary>:zap: Github Stats </summary>
-  <img align="left" alt="Tahir's Github Stats" src="https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide_border=true&theme=nightowl)" />
-</details>
+![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahirattar&show_icons=true&theme=radical)
 ## 🎮 Interactive Games
 
 ### 🎯 Breakout - "TAHIR ATTAR" Edition
