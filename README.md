@@ -1,7 +1,7 @@
 <h1 align="center">Hey 👋What's Up?</h1>
 https://spotify-playing-tahirattar087-8873s-projects.vercel.app/
 ###
-[![Spotify](https://tahir-attar.vercel.app/api/spotify)](https://open.spotify.com/user/tahir-attar)
+[![Spotify](https://spotify-playing-tahirattar087-8873s-projects.vercel.app/api/spotify)](https://open.spotify.com/user/tahir-attar)
 
 
 <div align="center">
