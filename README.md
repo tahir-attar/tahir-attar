@@ -53,7 +53,7 @@
 
 ---
 
-![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,contribs,issues,total_prs&theme=ambient_gradient)
+![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,total_prs&theme=ambient_gradient)
 ## 🎮 Interactive Games
 
 ### 🎯 Breakout - "TAHIR ATTAR" Edition
