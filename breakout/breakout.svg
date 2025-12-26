@@ -53,9 +53,10 @@
   <rect x="360" y="30" width="14" height="14" fill="#39d353" rx="1"/>
   <rect x="210" y="105" width="14" height="14" fill="#39d353" rx="1"/>
   <rect x="330" y="285" width="60" height="15" fill="#ffffff" rx="1"/>
-  <circle cx="382" cy="232" r="4" fill="#ffeb3b"/>
+  <circle cx="337" cy="307" r="4" fill="#ffeb3b"/>
   <rect x="325" y="5" width="95" height="60" fill="#161b22" rx="2"/>
   <text x="330" y="25" font-size="12" fill="#8b949e" font-family="monospace">SCORE</text>
   <text x="330" y="45" font-size="16" fill="#39d353" font-family="monospace" font-weight="bold">10</text>
   <text x="330" y="65" font-size="10" fill="#8b949e" font-family="monospace">Bricks: 53</text>
+  <text x="210" y="150" text-anchor="middle" font-size="24" fill="#f85149" font-family="monospace" font-weight="bold">GAME OVER</text>
 </svg>
