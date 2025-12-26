@@ -52,24 +52,5 @@
 ###
 
 ---
-#
-![What Am I Listening](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/main/assets/listening-on-ytmusic.svg)
-
 ![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,total_prs&theme=transparent)
-## 🎮 Interactive Games
 
-### 🎯 Breakout - "TAHIR ATTAR" Edition
-
-![Breakout Game](breakout/breakout.svg)
-
-**Ball breaking your name spelled in green GitHub bricks!**
-
-- 🧱 Bricks spell **"TAHIR ATTAR"** in green (GitHub contribution style)
-- 🟡 Ball bounces with realistic physics, shatters bricks on contact
-- 🤖 AI-controlled paddle automatically follows the ball
-- 📊 Real-time score tracking (10 points per brick destroyed)
-- 🔄 Game state persists across updates, continuous playable loop
-- ⚙️ Pure Python engine with collision detection and AI paddle
-- 🚀 Auto-updates every 12 hours via GitHub Actions
-
----
