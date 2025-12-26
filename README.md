@@ -52,7 +52,7 @@
 ###
 
 ---
-![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahirattar&show_icons=true&theme=radical)
+![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahirattar&show_icons=true&theme=gruvbox)
 ## 🎮 Interactive Games
 
 ### 🎯 Breakout - "TAHIR ATTAR" Edition
