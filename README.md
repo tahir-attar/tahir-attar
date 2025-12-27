@@ -40,7 +40,7 @@
 
 ###
 
-![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,total_prs&theme=tokyonight')
+![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,total_prs&theme=transparent')
 <div align="center">
   <img src="https://tahirattar.pythonanywhere.com/?theme=dark" alt="Widget with the current Spotify song"  />
 </div>
