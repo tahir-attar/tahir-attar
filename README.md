@@ -109,8 +109,3 @@
 </div>
 
 ###
-<div align="center">
-  <img src="https://tahirattar.pythonanywhere.com/?theme=dark" alt="Widget with the current Spotify song"  />
-</div>
-
-###
