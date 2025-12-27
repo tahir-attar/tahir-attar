@@ -46,7 +46,7 @@
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/tahir-attar/tahir-attar/output/pacman-contribution-graph.svg">
 </picture>
 <p align="center">
-  <a href="https://github.com/kittinan/spotify-github-profile">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=316i6pmzth357hka67gyjciaipdy&cover_image=true&theme=novatorem&show_offline=false&background_color=000000&interchange=false&profanity=false&bar_color=38c733&bar_color_cover=true">
+  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=316i6pmzth357hka67gyjciaipdy&redirect=true">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=316i6pmzth357hka67gyjciaipdy&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=true">
   </a>
 </p>
