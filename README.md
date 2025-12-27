@@ -43,7 +43,7 @@
 <div align="center">
   <img src="https://tahirattar.pythonanywhere.com/?theme=dark" alt="Widget with the current Spotify song"  />
 </div>
-
+![Top Langs](https://github-readme-stats-lais.vercel.app/api/top-langs/?username=tahir-attar&langs_count=8)
 ###
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tahir-attar/tahir-attar/output/pacman-contribution-graph-dark.svg">
