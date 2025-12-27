@@ -1,8 +1,4 @@
 <h1 align="center">Hey 👋What's Up?</h1>
-
-###
-#
-![Spotify](https://spotify-recently-played-readme.vercel.app/api?user=316i6pmzth357hka67gyjciaipdy)
 ###
 <div align="center">
   <img src="https://skillicons.dev/icons?i=ts" height="60" alt="typescript logo"  />
@@ -39,7 +35,7 @@
 ###
 
 ###
-![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,total_prs&theme=radical)
+![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,total_prs&theme=transparent)
 <div align="center">
   <img src="https://tahirattar.pythonanywhere.com/?theme=dark" alt="Widget with the current Spotify song"  />
 </div>
