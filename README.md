@@ -39,7 +39,7 @@
 ###
 
 ###
-![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,total_prs&theme=calmpink)
+![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,total_prs&theme=radical)
 <div align="center">
   <img src="https://tahirattar.pythonanywhere.com/?theme=dark" alt="Widget with the current Spotify song"  />
 </div>
