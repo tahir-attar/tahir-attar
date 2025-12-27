@@ -1,6 +1,8 @@
 <h1 align="center">Hey 👋What's Up?</h1>
 
 ###
+#
+![Spotify](https://raw.githubusercontent.com/tahir-attar/tahir-attar/main/assets/spotify.svg)
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=ts" height="60" alt="typescript logo"  />
