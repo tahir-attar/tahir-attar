@@ -1,0 +1,4 @@
+spotipy
+requests
+svgwrite
+python-dotenv
