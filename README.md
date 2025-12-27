@@ -39,11 +39,10 @@
 ###
 
 ###
-![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,total_prs&theme=tokyonight)
+![Tahir's GitHub stats](https://github-readme-stats-lais.vercel.app/api?username=tahir-attar&show_icons=true&hide=pr,total_prs&theme=calmpink)
 <div align="center">
   <img src="https://tahirattar.pythonanywhere.com/?theme=dark" alt="Widget with the current Spotify song"  />
 </div>
-![Top Langs](https://github-readme-stats-lais.vercel.app/api/top-langs/?username=tahir-attar&langs_count=8)
 ###
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tahir-attar/tahir-attar/output/pacman-contribution-graph-dark.svg">
