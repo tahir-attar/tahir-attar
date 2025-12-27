@@ -1,9 +1,8 @@
-<h1 align="center">Hey 👋What's Up?</h1>
+<img width="1512" height="750" alt="image" src="https://github.com/user-attachments/assets/5f49a5ab-1ac5-41c7-8854-539aa3872e8b" /><h1 align="center">Hey 👋What's Up?</h1>
 
 ###
 #
-![Spotify](https://raw.githubusercontent.com/tahir-attar/tahir-attar/main/assets/spotify.svg)
-
+![Alt text](https://spotify-recently-played-readme.vercel.app/api?user=316i6pmzth357hka67gyjciaipdy)
 <div align="center">
   <img src="https://skillicons.dev/icons?i=ts" height="60" alt="typescript logo"  />
   <img width="12" />
