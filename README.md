@@ -1,7 +1,10 @@
 <h1 align="center">Hey 👋What's Up?</h1>
-https://spotify-playing-tahirattar087-8873s-projects.vercel.app/
-###
-[![Spotify](https://spotify-playing-tahirattar087-8873s-projects.vercel.app/api/spotify)](https://open.spotify.com/user/tahir-attar)
+<a href="https://tahirattar.pythonanywhere.com/link">
+  <img
+    src="https://tahirattar.pythonanywhere.com"
+    alt="Current Spotify Song"
+  />
+</a>
 
 
 <div align="center">
